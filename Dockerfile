@@ -3,8 +3,7 @@ MAINTAINER Oriol Boix Anfosso <dev@orboan.com>
 
 RUN \
   yum update -y && \
-  yum install httpd -y && \
-  mkdir -p /data/www/html
+  yum install httpd -y
 
 # - Clean YUM caches to minimise Docker image size...
 RUN \
