@@ -1,4 +1,4 @@
-FROM orboan/docker-centos-supervisor-ssh
+FROM orboan/dcss-shellinabox
 MAINTAINER Oriol Boix Anfosso <dev@orboan.com>
 
 RUN \
@@ -11,4 +11,4 @@ RUN \
 
 ADD container-files /
 
-EXPOSE 80
+EXPOSE 8080
