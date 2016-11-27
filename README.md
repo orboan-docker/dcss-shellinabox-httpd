@@ -7,14 +7,14 @@ It is inspired by [million12/centos-supervisor](https://registry.hub.docker.com/
 
 ## Docker run example:
 
-#### docker run -p 8000:80 -p 2222:22 -p 9001:9001 -e BOXINASHELL_PORT=9103 -p 9103:4200 -d -v ~/data:/data orboan/dcss-shellinabox-httpd
+#### docker run -p 8000:80 -p 2222:22 -p 9001:9001 -e SHELLINABOX_PORT=9103 -p 9103:4200 -d -v ~/data:/data orboan/dcss-shellinabox-httpd
 
 8000:80 maps the httpd server (apache2)
 2222:22 maps the sshd server
 9001:9001 maps the supervisor web server
 9103:4200 maps the shellinabox web server
 
-Default shellinabox host mapped port is 9100, but if you want to use another as in this 'docker run' example, you must use the environment variable BOXINASHELL_PORT to make shellinabox added to the supervisor web page.
+Default shellinabox host mapped port is 9100, but if you want to use another as in this 'docker run' example, you must use the environment variable SHELLINABOX_PORT to make shellinabox added to the supervisor web page.
 
 
 ## SSH default login 
