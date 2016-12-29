@@ -2,7 +2,6 @@ FROM orboan/dcss-shellinabox
 MAINTAINER Oriol Boix Anfosso <dev@orboan.com>
 
 RUN \
-  yum update -y && \
   yum install httpd -y
 
 # - Clean YUM caches to minimise Docker image size...
