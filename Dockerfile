@@ -9,5 +9,5 @@ RUN \
   yum clean all && rm -rf /tmp/yum*
 
 ADD container-files /
-
+ 
 EXPOSE 8080
